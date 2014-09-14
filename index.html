@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="main.js" type="text/javascript"></script>
+
 	</head>
 	<body>
 
@@ -87,7 +88,14 @@
 	</div>
 
 	-->
-
+	<script>
+	Parse.initialize("VVxmOnKE3ySrnq7225Cxg3RSiQqoU6KwGEncVSDH", "0vn4AcS5X486aplSYCmk3FIeJpZtfjmkgOT3bq71");
+	var TestObject = Parse.Object.extend("TestObject");
+	var testObject = new TestObject();
+	testObject.save({foo: "bar"}).then(function(object) {
+  	alert("yay! it worked");
+	});
+	</script>
 	<!-- Top Nav Bar -->
 
 	<header>
