@@ -4,7 +4,7 @@
 /* Top Nav Bar */
 
 body {
-	background-image: url("/Users/Joshua/Desktop/index/background.png");
+	background-image: url("background.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
