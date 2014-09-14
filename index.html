@@ -5,14 +5,6 @@
 		<link rel="stylesheet" href="style.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="main.js" type="text/javascript"></script>
-		<script>
-		Parse.initialize("qEitx5R7GBRxShAHtg5iiybgSj7ffuQFlYdRVXuB", "ix4pAEMNzFuFcLQ8WNeIiIvt79d8pX29ZqC3ykkM");
-		var TestObject = Parse.Object.extend("TestObject");
-		var testObject = new TestObject();
-		testObject.save({foo: "bar"}).then(function(object) {
-  		alert("yay! it worked");
-		});
-	</script>
 	</head>
 	<body>
 
@@ -165,6 +157,21 @@
 			<button id = "Submit"> Get Started </button>
 		</form>
 	</div>
+
+	 <script type="text/javascript">
+    Parse.initialize("qEitx5R7GBRxShAHtg5iiybgSj7ffuQFlYdRVXuB", "ix4pAEMNzFuFcLQ8WNeIiIvt79d8pX29ZqC3ykkM");
+    
+    var TestObject = Parse.Object.extend("TestObject");
+    var testObject = new TestObject();
+      testObject.save({foo: "bar"}, {
+      success: function(object) {
+        $(".success").show();
+      },
+      error: function(model, error) {
+        $(".error").show();
+      }
+    });
+  </script>
 
 
 	</body>
