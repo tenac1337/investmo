@@ -170,8 +170,17 @@
 
 		<form method="POST" action="/survey.html" id = "Email Form">
 			<input id = "Email" name="email" type = "Email" placeholder = ".edu email address">
-			<button id = "Submit" onclick="window.location = 'survey.html'"> Get Started </button>
+			<button id = "Submit" onclick="return survey_onclick()"> Get Started </button>
+			<script language="javascript" type="text/javascript">
+
+		function survey_onclick() 
+		{
+    		window.location.href = "survey.html";
+		}
+
+			</script>
 		</form>
+
 	</div>
 
 	<!-- Amount Invested -->
