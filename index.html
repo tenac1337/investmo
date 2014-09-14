@@ -168,10 +168,17 @@
 
 		<!-- Email Input -->
 
-		<form method="POST" action="survey.html" id = "Email Form">
+		<form method="POST" action="/survey.html" id = "Email Form">
 			<input id = "Email" name="email" type = "Email" placeholder = ".edu email address">
 			<button id = "Submit" onclick="return survey_onclick()"> Get Started </button>
 			<script language="javascript" type="text/javascript">
+
+		function btntest_onclick() 
+		{
+    		window.location = "survey.html";
+		}
+
+		</script>
 		</form>
 
 	</div>
