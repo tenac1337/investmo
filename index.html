@@ -101,8 +101,13 @@
   // These three cases are handled in the callback function.
 
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
+  if (response.status === 'connected') {
+    console.log('Logged in.');
+  }
+  else {
+    FB.login();
+  }
+});
 
   };
 
