@@ -1,8 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 html{
-	padding-left: 60px;
+	padding-left: 100px;
 	background: #FBFBFB;
 }
 
@@ -28,6 +29,22 @@ html{
 	display: block;
 }
 
+#SignOut {
+	Float: right;
+	margin-right: 50px;
+	height: 40px;
+	width: 100px;
+	border-radius: 5.5px;
+	font-size: 14px;
+	text-decoration: bold;
+	color: white;
+	margin-left: 12px;
+	text-align: center;
+	background-color: #EA6B6B;
+	border: 2px solid #EA6B6B;
+	margin-top: -4px;
+}
+
 li {
 	display: inline;
 	font-family: 'Open Sans', sans-serif;
@@ -36,7 +53,7 @@ li {
 }	
 
 a {
-	color: gray;
+	color: #B9B9B9;
 	text-decoration: none;
 }
 
@@ -49,160 +66,80 @@ a:hover {
 	font-style: bold;
 }
 
-/* Progress */
+/* Name */
 
-#ProgressBar {
-	width: fill;
-	height: 100px;
-	background-color: #EFEFEF;
-	display: inline;
-	margin-top: 96px;
-}
-
-#ProgressText {
-	margin-top: 146px;
-	float: left;
-	color: #939393;
-	font-size: 26px;
-	font-family: 'Open Sans', sans-serif;
-	display: inline;
-}
-
-#Progress {
-	margin-top: -1px;
-	text-align: center;
-	padding: auto;
-	display: inline;
-	margin-left: -5px;
-}
-
-.Heading {
-	margin-top: 140px;
+#Name {
+	margin-top: 150px;
 	color: Black;
-	font-size: 30px;
+	font-size: 36px;
 	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 4px;
+	margin-bottom: 10px;
+	text-align: left;
 }
 
-/* Form */
-
-/* Placeholders */
-
-::-webkit-input-placeholder {
-   padding-left: 1px;
-   color: #C9C9C9;
+#line {
+	float: left;
+	width: 240px;
+	height: 0.5px;
+	border-style: solid, gray;
+	display: block;
+	margin-left: -4px;
+	margin-top: 12px;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   padding-left: 1px;
-   color: #C9C9C9;
+/* Current Balance  */
+
+#CurrentBalance {
+	color: #5B5B5B;
+	font-size: 19.5px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	display: inline;
+	margin-left: -4.5px;
+	margin-bottom: 20px;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   padding-left: 1px;
-   color: #C9C9C9;
+#Money {
+	color: #47BC42;
+	font-size: 19.5px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	display: inline;
 }
 
-:-ms-input-placeholder {  
-   padding-left: 1px;
-   color: #C9C9C9;
+
+/* Profile Info */
+
+#Profile {
+	text-align: left;
+	margin-top: 20px;
+	color: #9B9B9B;
+	margin-left: -74px;
 }
 
-
-/* Inputs */
-
-#NameText {
-	margin-top: -60px;
+.ProfileInfo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	padding-bottom: 10px;
 	display: block;
 }
 
-#NameBox {
-	height: 60px;
-	width: 500px;
-	border-radius: 7.5px;
-	border: 1px solid #DBDBDB;
-	padding-left: 18px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
-	color: #939393;
-	margin-top: -12px;
-}
+/* Button */
 
-.Questions {
-	color: Black;
-	font-size: 19px;
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 100px;
-	margin-bottom: 4px;
-}
-
-#AmountText {
-	margin-top: -60px;
-}
-
-#AmountBox select {
-	width: 520px;
-	height: 66px;
-	background-color: White;
-	padding: 5px;
-	font-size: 16px;
-	line-height: 1;
-	border: 1px solid #DBDBDB;
-	border-radius: 0;
-	margin-top: -10px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 17.4px;
-	color: #939393;
-}
-
-#risk {
-	margin-top: 40px;
-}
-
-#TimelineDescription {
-	font-size: 14px;
-	margin-top: -15px;
-	margin-bottom: 20px;
-	color: gray	
-}
-
-#time {
-	margin-top: 34px;
-}
-
-#industries {
-	margin-top: 40px;
-}
-
-/* Check Boxes */
-
-.check {
-	background-color: #fafafa;
-	border: 1px solid #cacece;
-	border-radius: 3px;
-	margin-top: 13px;
-	margin-right: 12px;
-}
-
-#CheckText {
-	font-size: 16.5px;
-	padding: 8px;
-	margin-left: 10px;
-}
-
-#Continue {
-	height: 60px;
-	width: 430px;
+#Another {
+	height: 54px;
+	width: 216px;
 	border-radius: 5.5px;
 	border: 1px solid #DBDBDB;
-	font-size: 18px;
+	font-size: 14px;
 	text-decoration: bold;
 	color: white;
 	text-align: center;
 	background-color: #6291C6;
 	border: 2px solid #6291C6;
-	margin-top: 28px;
-	margin-left: 0px;
-	margin-bottom: 50px;
+	float: left;
+	margin-top: 6px;
 	display: block;
+	margin-left: -6px;
 }
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Survey</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src='https://platform.venmo.com/sdk.js'></script>
+	<link rel="stylesheet" href="surveystyle.css">
+</head>
+
+
+<body>
+
+<!-- Nav Bar -->
+
+	<header>
+		<div id = "top"> 
+			<div id = "tabs">
+				<ul>
+					<li> <a id = "investmo" href="#"> Investmo </a> </li>
+					<li> <a class = "other" href="#"> Back to Home </a> </li>
+				</ul>
+			</div>		
+		</div>
+	</header>
+
+<div id = "All">
+
+<p class = "Heading"> Investment Information </p>
+
+<!-- Form -->
+	<div class="Questions">
+		
+		<!-- Name -->
+		<p id = "NameText"> Full Name </p>
+		<input id = "NameBox" type="text" placeholder="e.g. Maddie BeaLee">
+
+		<!-- Amount -->
+		<p id="AmountText">Amount of Investment</p>
+		<div id="AmountBox">
+
+			<select>
+				<option>Please select one</option>
+				<option value="25">$25</option>
+				<option value="50">$50</option>
+				<option value="100">$100</option>
+				<option value="150">$150</option>
+				<option value="200">$200</option>
+				<option value="250">$250</option>				
+			</select>
+
+	
+			<p id="risk">Risk Tolerance</p>
+			<select>
+				<option>   Please select one</option>
+				<option>Low Risk</option>
+				<option>Medium Risk</option>
+				<option>High Risk</option>
+			</select>
+
+			<p id="time">Investment Timeline</p>
+			<p id="TimelineDescription">This is when we'll Venmo you your money back</p>
+			<select id="InvestmentForm">
+				<option>Please select one</option>
+				<option>3 months</option>
+				<option>6 months</option>
+				<option>12 months</option>
+				<option>18 months</option>
+				<option>24 months</option>
+			</select>
+		</div>
+
+<!--
+
+			<p id="industries"> Which of the following industries would you like us to invest in? </p>
+
+		<form id = "CheckText">
+			<input class = "check" type="checkbox" name="industry" value="IM"> International Markets 
+			<input class = "check" type="checkbox" name="industry" value="E"> Energy 
+			<input class = "check" type="checkbox" name="industry" value="TM"> Technology and Media
+			<input class = "check" type="checkbox" name="industry" value="CR"> Consumer Retail
+			<input class = "check" type="checkbox" name="industry" value="MP"> Medical and Pharmaceutical
+			<input class = "check" type="checkbox" name="industry" value="FM"> Financial Market
+		</form>
+
+-->
+		<p id="VenmoText"> Log-in to Venmo: </p>
+
+		<iframe id ="anchor" style="width: 120px; height: 33px" scrolling="no" frameborder="0"  src="https://platform.venmo.com/#payment-widget?recipient_id=1497306809499648464&amount=0"></iframe>
+
+
+		<script>
+		$('#AmountBox').on('change',function(evt){
+			console.log(evt.target.value);
+
+			$('#anchor').attr("src", "https://platform.venmo.com/#payment-widget?recipient_id=1497306809499648464&amount=" + evt.target.value);
+		});
+		</script>
+
+		<button id = "Continue"> Complete Investment and Continue to Profile </button>
+
+	</div>
+
+</body>
+
+</html>
